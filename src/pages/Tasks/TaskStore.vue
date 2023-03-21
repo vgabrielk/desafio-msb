@@ -35,7 +35,7 @@ export default {
 
 <template>
 	<div class="container">
-		<BackButton route="tasks"/>
+		<BackButton route="/tasks" />
 		<div class='row form-group col-sm-12'>
 			<div class='col-md-12'>
 				<label>Nome</label>
