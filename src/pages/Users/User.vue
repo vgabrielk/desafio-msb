@@ -34,6 +34,8 @@ export default {
             try {
                 const response = await api.put(`/users/${user.id}`, data);
                 this.getUser(user.id);
+                alert('Atualizado com sucesso!')
+
             }
             catch (err) {
                 alert(err);
@@ -57,6 +59,8 @@ export default {
             try {
                 const response = await api.delete(`/users/${user.id}`);
                 this.$router.push({ path: `/users` });
+                alert('Deletado com sucesso!')
+
             }
             catch (err) {
                 alert(err);

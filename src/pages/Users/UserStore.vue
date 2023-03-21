@@ -13,6 +13,8 @@ export default {
             try {
                 const response = await api.post("/users", data);
                 this.$router.push("/users");
+                alert('Cadastrado com sucesso!')
+
             }
             catch (err) {
                 alert(err);

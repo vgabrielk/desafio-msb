@@ -13,6 +13,8 @@ export default {
             try {
                 const response = await api.post("/tasks", data);
                 this.$router.push("/tasks");
+                alert('Cadastrado com sucesso!')
+
             }
             catch (err) {
                 alert(err);

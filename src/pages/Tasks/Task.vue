@@ -23,6 +23,8 @@ export default {
             try {
                 const response = await api.put(`/tasks/${task.id}`, data);
                 this.getTask(task.id);
+                alert('Atualizado com sucesso!')
+
             }
             catch (err) {
                 alert(err);
@@ -32,6 +34,8 @@ export default {
             try {
                 const response = await api.delete(`/tasks/${task.id}`);
                 this.$router.push({ path: `/tasks` });
+                alert('Deletado com sucesso!')
+
             }
             catch (err) {
                 alert(err);
@@ -46,6 +50,8 @@ export default {
             try {
                 const response = await api.put(`/tasks/${task.id}`, data);
                 this.getTask(task.id);
+                alert('Atualizado com sucesso!')
+
             }
             catch (err) {
                 alert(err);
