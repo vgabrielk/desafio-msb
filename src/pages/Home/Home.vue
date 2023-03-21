@@ -59,4 +59,15 @@ export default {
         
     }
 }
+@media(max-width : 768px){
+    .links {
+    flex-direction: column;
+    .link {
+     button{
+       width: 100%!important;
+       margin-top: 2rem;
+     }
+    }
+    }
+}
 </style>

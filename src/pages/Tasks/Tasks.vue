@@ -46,6 +46,10 @@ export default {
                 ↺
             </div>
         </div>
+        <router-link to='/tasks/store'>
+            <button>Cadastrar nova tarefa</button>
+        </router-link>
+
         <div>
             <select class="custom-select my-3" name="status" v-model="taskStatus" :onchange="requests" id="status">
                 <option value="ALL">TODAS</option>
@@ -53,9 +57,10 @@ export default {
                 <option value="INACTIVE">INATIVAS</option>
             </select>
         </div>
-        <table class="table text-light">
-            <thead>
-                <tr>
+        <div class='table-responsive'>
+            <table class="table text-nowrap text-light">
+                <thead>
+                    <tr>
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Descrição</th>
@@ -68,9 +73,10 @@ export default {
                     <td class="name">{{ task.name }}</td>
                     <td>{{ task.descricao }}</td>
                     <td class="emoji">{{ task.done ? '🟢' : '🔴' }}</td>
-                </tr>
-            </tbody>
-        </table>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </template>
 <style lang="scss" scoped>

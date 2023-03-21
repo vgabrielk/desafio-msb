@@ -41,4 +41,9 @@ export default {
         }
     }
 }
+@media(max-width: 567px) {
+    .header {
+    padding: 0 1rem;
+    }
+}
 </style>

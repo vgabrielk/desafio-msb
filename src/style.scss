@@ -37,27 +37,8 @@ body{
   width: 100%;
   flex-wrap: wrap;
 }
-
-
-.user-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-  h3 {
-    letter-spacing: 10px;
-  }
-
-  img {
-    margin-top: 20px;
-    width: 120px;
-    border-radius: 50%;
-  }
-
-  p {
-    margin-top: 20px;
-  }
-
+label {
+  margin-top: 15px!important
 }
 td {
   cursor: pointer;
@@ -80,6 +61,11 @@ button {
     transform: translateY(-5px);
     box-shadow: 1px 1px 12px black;
   }
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 input {
@@ -106,4 +92,5 @@ input {
 
 .emoji {
   animation: animate .8s alternate infinite;
+  cursor: pointer;
 }

@@ -55,7 +55,6 @@ export default {
             try {
                 const response = await api.get(`/tasks/${id}`);
                 this.task = response.data;
-                console.log(response.data);
             }
             catch (err) {
                 alert(err);
@@ -71,12 +70,24 @@ export default {
     <div class="container">
         <BackButton route="/tasks"/>
         <div class="content">
-            <label for="">Clique na bolinha para alterar o status da tarefa</label>
-            <span class="emoji" @click="setStatus(task)"> {{ task.done ? '🟢' : '🔴' }}</span>
-            <label>Nome</label>
-            <input type="text" :placeholder="task.name" v-model="name" />
-            <label>Descrição</label>
-            <input type="text" :placeholder="task.descricao" v-model="descricao" />
+            <label for="">Clique na bolinha para alterar o status da tarefa
+   <span class="emoji" @click="setStatus(task)"> {{ task.done ? '🟢' : '🔴' }}</span>
+
+            </label>
+         
+            <div class='row form-group'>
+            <div class='col-sm-6'>
+                <label>Nome</label>
+                <input class='form-control' v-model="name" :placeholder="task.name"  type='text' />
+            </div>
+            <div class='col-sm-6'>
+                <label>Descrição</label>
+                <input class='form-control' type='text' 
+                v-model="descricao" :placeholder="task.descricao" 
+                />
+            </div>
+        </div>
+
             <div class="buttons">
                 <button type="submit" @click="updateTask(task)">
                     Atualizar
@@ -93,7 +104,7 @@ export default {
 .content {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     gap: 20px;
 
     display: flex;
@@ -103,21 +114,8 @@ export default {
         margin-bottom: 5px;
     }
 
-    .buttons {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
+   
 
-    input {
-        background-color: #111;
-        color: #fff;
-        border: none;
-        height: 30px;
-        user-select: none;
-        padding: 0 10px;
-        margin-bottom: 20px;
-    }
 }
 
 .emoji {

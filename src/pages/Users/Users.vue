@@ -47,6 +47,9 @@ export default {
                 ↺
             </div>
         </div>
+        <router-link to='/users/store'>
+            <button>Cadastrar novo usuário</button>
+        </router-link>
         <div>
             <select class="custom-select my-3" name="status" v-model="userStatus" :onchange="requests" id="status">
                 <option value="ALL">TODOS</option>
@@ -98,7 +101,7 @@ export default {
 
 .avatar {
     img {
-        width: 80px;
+        width: 50px;
         border-radius: 50%;
     }
 }
