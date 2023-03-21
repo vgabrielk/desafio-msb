@@ -1,7 +1,63 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Desafio MSB
 
-## Recommended IDE Setup
+Desafio técnico para vaga de desenvolvedor frontend, utillizei o framework VueJS
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Variáveis de ambiente
+
+Para rodar este projeto, você vai precisar adicionar a seguinte variável de ambiente ao seu arquivo .env
+
+`VITE_APP_API_URL` = url
+
+
+
+
+
+
+
+
+## Rodar localmente
+
+Clone o projeto
+
+```bash
+ssh>
+  git clone git@github.com:vgabrielk/desafio-msb.git
+
+https>
+  git clone https://github.com/vgabrielk/desafio-msb.git
+```
+
+Vá até o diretório do projeto
+
+```bash
+  cd desafio-msb
+```
+
+Instale as dependências (Necessário node instalado)
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+
+
+## Deploy
+
+Para ver o deploy do projeto
+
+(https://desafio-msb.netlify.app/)
+
+## Features
+
+- CRUD Usuários / tarefas (todas operações)
+- Alterar status do usuário ou tarefa de uma forma diferente
+- Filtrar por tarefa concluida ou não
+
+

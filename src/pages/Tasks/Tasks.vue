@@ -42,7 +42,7 @@ export default {
         <BackButton route="/"/>
         <div class="header-table">
             <h3>Tasks</h3>
-            <div class="reload">
+            <div class="reload" @click="requests">
                 ↺
             </div>
         </div>
